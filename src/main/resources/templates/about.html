@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8" />
+	<title>Document</title>
+</head>
+<body>
+	<h1>this is load using thymeleaf</h1>
+	<h1 th:text="${ #strings.toUpperCase(name)}"></h1>
+	<h1 th:text="${date}"></h1>
+	<div th:with="a=5,b=67">
+	<h1>Value of 1 is <span th:text="${a}"></span></h1>
+	</div>
+</body>
+</html>

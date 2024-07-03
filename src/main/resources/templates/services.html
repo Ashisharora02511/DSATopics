@@ -1,0 +1,12 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8" />
+	<title>Services</title>
+</head>
+<body>
+<h1 >Here we demo frgements in thymleaf</h1>
+<!-- Going to bring footer here -->
+<footer  id="hostTag"th:include="footer::footerDetails(${title},${subtitle})"></footer>
+</body>
+</html>
